@@ -4,10 +4,12 @@ const app = express();
 const tasks = require('./routes/tasks')
 require('dotenv').config()
 const connectDB = require('./db/connect')
+const notFound = require('./middleware/not-found')
 
 const port = 3000;
 
 //middleware
+app.use(express.static('./public'))
 app.use(express.json())
 
 
@@ -17,6 +19,7 @@ app.get('/hello', (req,res) => {
 })
 
 app.use('/api/v1/tasks', tasks)
+app.use(notFound)
 
 //random
 const start = async () => {
