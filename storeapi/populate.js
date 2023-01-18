@@ -10,6 +10,7 @@ const jsonProducts = require('./products.json')
 const start = async () =>{
     try{
         await connectDB(processenv.MONGO_URI)
+        console.log('Success!!!')
     } catch (error){
         console.log(error)
     }
