@@ -1,9 +1,21 @@
+const CustomAPIError = require('../errors/custom-error')
+
 const login = async (req, res) ={
     const {username, password} = req.body
     console.log(username, password)
-    res.send('Fake Login/REgister/Signup Route')
+
+    if (!username || !password) {
+        console.log(username,  password)
+        res.send('Fake Login/REgister/Signup Route')
+    }
 
 }
+
+// mongo
+//joi
+//
+
+
 
 
 const dashboard = async (req, res) => {
