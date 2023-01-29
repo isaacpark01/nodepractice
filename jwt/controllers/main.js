@@ -7,7 +7,7 @@ const login = async (req, res) =>{
     if (!username || !password){
         throw new CustomAPIError ('please provide email and password', 400)
     }
-    const token = jwt.sing({id, username}, process.env.JWT_SECRET},  {expiresIn : '30d'})
+    const token = jwt.sing({id, username}, process.env.JWT_SECRET,  {expiresIn : '30d'})
 
     res.status(200).json({msg: 'user created', token})
 
