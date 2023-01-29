@@ -1,3 +1,4 @@
+const jwt = require('jsonwebtoken')
 const CustomAPIError = require('../errors/custom-error')
 
 const login = async (req, res) =>{
@@ -9,8 +10,9 @@ const login = async (req, res) =>{
        
 
     }
+
     res.send('fake/login/  register/ signup route')
-    const token = jwt.sing({id, username}, process.env.JWT_SECRET,  {expiresIn : '30d'})
+    const token = jwt.sign({id, username}, process.env.JWT_SECRET,  {expiresIn : '30d'})
 
     res.status(200).json({msg: 'user created', token})
 
