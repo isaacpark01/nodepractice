@@ -30,4 +30,4 @@ const dashboard = async (req, res) => {
     res.status(200).json({msg: "hello, john doe", secret: 'here is your autheroiezed data, your lucky number is ',luckyNumber })
 }
 
-module.exports = { login, dashboard}a
+module.exports = { login, dashboard}
