@@ -11,7 +11,7 @@ const login = async (req, res) =>{
 
     }
 
-    res.send('fake/login/  register/ signup route')
+    res.send('fake/login/register/ signup route')
     const token = jwt.sign({id, username}, process.env.JWT_SECRET,  {expiresIn : '30d'})
 
     res.status(200).json({msg: 'user created', token})
@@ -30,4 +30,4 @@ const dashboard = async (req, res) => {
     res.status(200).json({msg: "hello, john doe", secret: 'here is your autheroiezed data, your lucky number is ',luckyNumber })
 }
 
-module.exports = { login, dashboard}
+module.exports = { login, dashboard}a
