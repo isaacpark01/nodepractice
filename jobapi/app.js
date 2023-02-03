@@ -9,7 +9,7 @@ const app = express();
 
 // routers
 const authRouter = require('./routes/auth')
-const jobRouter = require('./routes/jobs')
+const jobsRouter = require('./routes/jobs')
 
 
 // error handler
