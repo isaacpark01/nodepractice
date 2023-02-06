@@ -9,7 +9,7 @@ const app = express();
 
 // routers
 const authRouter = require('./routes/auth')
-const jobsRouter = require('./routes/jobs')
+const jobs Router = require('./routes/jobs')
 
 
 // error handler
@@ -27,7 +27,7 @@ app.use('/api/v1/jobs', jobsRouter)
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;lk
 
 const start = async () => {
   try {
