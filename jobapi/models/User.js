@@ -1,13 +1,12 @@
 const mongoose = require('mongoose')
 
-const UserSChema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
     name:{
         type:String, 
         required:[true, "please prove a true name"], 
         minlength: 3, 
         maxlength: 50, 
-    }
-},
+    },
     email:{
         type:String, 
         required:[true, "please prove a a email  "], 
@@ -16,11 +15,12 @@ const UserSChema = new mongoose.Schema({
         unique: true, 
 
 }, 
-password:{
-    type:String, 
-    required : [true, "please enter a password"],
-    minlength: 6, 
-    maxlength: 12, 
+    password:{
+        type:String, 
+        required : [true, "please enter a password"],
+        minlength: 6, 
+        maxlength: 12, 
+}
 }
 )
 
