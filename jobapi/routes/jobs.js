@@ -8,4 +8,4 @@ router.route('/:id').get(getJob).delete(deleteJob).patch(updateJob)
 
 module.exports = router 
 
-module.exports = router
+module.exports = routere
