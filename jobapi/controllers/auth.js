@@ -4,7 +4,7 @@ const {StatusCodes} = require('http-status-codes')
 
 const register = async (req,res) =>{
     const{name, email, password} = req.body
-    if (!name || !email || d!password){
+    if (!name || !email || !password){
         
     }
     const user = await User.create({...req.body})
