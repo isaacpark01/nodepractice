@@ -1,8 +1,11 @@
 const User = require('../models/User')
 const {StatusCodes} = require('http-status-codes')
 const {BadRequestError} = require('../errors')
+const bcrypt = require('bcryptjs')
+
 
 const register = async (req,res) =>{
+
     const{name, email, password} = req.body
     if (!name || !email || !password){
         throw new BadRequestError("pelase provide, name email, and password")
