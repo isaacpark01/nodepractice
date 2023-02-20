@@ -21,7 +21,7 @@ const UserSchema = new mongoose.Schema({
         minlength: 6, 
     
 }
-}fe
+}
 )
 
 module.exports = mongoose.model('User', UserSchema)
