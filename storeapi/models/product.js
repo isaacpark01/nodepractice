@@ -21,7 +21,7 @@ const productSchema = new mongoose.Schema({
         default: Date.now(),
     },
     company:{
-        type:String, 
+        type:String,  ef
         enum:{
             values: ['ikea', 'liddy', 'caressa', 'marcos'],
             message: '{VALUE} is '
