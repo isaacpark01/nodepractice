@@ -35,4 +35,4 @@ const start = async () => {
         console.log(error)
     }
 }
-start()ef
+start()
