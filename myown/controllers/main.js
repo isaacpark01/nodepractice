@@ -17,7 +17,7 @@ const login = async (req, res) =>{
 
 const dashboard = async(req, res ) => {
     const luckyNumber = Math.floor(Math.floor(Math.random()  * 100))
-    res.status(200).json({"hello, john doe", secret: 'here is your authorized data, your lucky number is ', luckyNumber})
+    res.status(200).json({msg: "hello, john doe", secret: 'here is your authorized data, your lucky number is ', luckyNumber})
 }
 
 module.exports = {login, dashboard}
