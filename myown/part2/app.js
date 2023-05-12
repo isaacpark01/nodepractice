@@ -39,7 +39,3 @@ const start = async () =>{
 }
 
 start()
-
-
-
-ewpomp
