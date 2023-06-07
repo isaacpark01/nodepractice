@@ -14,3 +14,10 @@ for value in range(1,11):
 
 
 print(squares)
+
+my_foods = ['pizza', 'falafel', 'carrot cake'] 
+friend_foods = my_foods[:]
+print("my favorite foods are:")
+print(my_foods)
+
+print(friend_foods)
